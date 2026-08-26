@@ -10,8 +10,8 @@
 
 [![01 · 차량 ECU Black Box Validation — 7개 고장 시나리오, 24개 테스트케이스. 정적 결함 4건·동적 결함 11건 식별. 실제 CANoe 시험 패널.](assets/project-black-box.svg)](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
 
-**개인 프로젝트 · Black Box Testing 우수상**<br>
-요구사양 분석부터 CAPL 자동화, 경계값·상태 전이·Timing 시험까지 수행했습니다. Fresh Frame을 기준으로 타이밍을 맞추고, 결함을 재현하는 조건과 실행 화면을 함께 정리했습니다.
+**차량 ECU Black Box Validation · 개인 프로젝트 · 우수상**<br>
+7개 고장 시나리오를 CAPL 기반 24개 테스트케이스로 구성했습니다. 정적 검토에서 결함 4건, 동적 시험에서 결함 11건을 식별하고, Fresh Frame 수신 이후 측정을 시작하도록 타이밍 판정 기준을 맞췄습니다.
 
 [시험 설계와 실행 근거 ↗](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
 
@@ -19,7 +19,7 @@
 
 [![02 · AURIX UDS Bootloader — UDS 리프로그래밍과 Flash Backup/Restore. Trace32·DMI로 4바이트 정렬 오류를 추적한 교육 프로젝트의 당시 기록.](assets/project-bootloader.svg)](https://jb-cho55.github.io/portfolio/artifacts/bootloader/)
 
-**개인 교육 프로젝트 · Embedded C / AURIX TC234LP / Trace32**<br>
+**AURIX UDS Bootloader · 개인 교육 프로젝트**<br>
 UDS 리프로그래밍과 Flash Backup/Restore를 구현하고, CAN 응답 중단의 원인을 레지스터와 Trap 정보로 추적했습니다.
 
 > 당시 실행 기록과 현재 정적 확인을 구분합니다. 이후 발견한 길이·권한 검사 및 valid pattern 기록 순서의 개선안은 **미적용·미검증** 상태입니다.
@@ -30,7 +30,7 @@ UDS 리프로그래밍과 Flash Backup/Restore를 구현하고, CAN 응답 중�
 
 [![03 · CarMaker ADAS 통합·주차 — 6인 팀의 팀장·주차 알고리즘 담당. Hybrid A*·Reeds-Shepp 적용. 공개 주차 경로 결과.](assets/project-carmaker.svg)](https://github.com/jb-cho55/IVS-CarMaker-ADAS)
 
-**6인 팀 프로젝트 · 팀장 / 주차 알고리즘 담당**<br>
+**CarMaker ADAS 통합·주차 · 6인 팀의 팀장 / 주차 알고리즘 담당**<br>
 CarMaker·Simulink 기반 ADAS 통합 프로젝트에서 Hybrid A*·Reeds-Shepp를 적용한 주차 알고리즘을 담당했습니다. 팀 전체 결과와 개인 기여를 구분해 소개합니다.
 
 [코드와 프로젝트 문서 ↗](https://github.com/jb-cho55/IVS-CarMaker-ADAS)
