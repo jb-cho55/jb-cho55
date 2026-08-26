@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="150" viewBox="0 0 1280 150" role="img" aria-labelledby="title desc">
+  <title id="title">전체 포트폴리오 보기</title>
+  <desc id="desc">프로젝트의 과정, 코드, 시험 결과와 한계를 포트폴리오에서 확인하세요.</desc>
+  <rect width="1280" height="150" rx="14" fill="#10263F"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', sans-serif">
+    <text x="49" y="65" fill="#FFFFFF" font-size="31" font-weight="650">프로젝트의 전체 맥락과 근거</text>
+    <text x="50" y="105" fill="#AFC3D8" font-size="20">코드 · 시험 결과 · 디버깅 과정 · 구현의 한계</text>
+    <text x="988" y="83" fill="#94CBF7" font-size="25" font-weight="600">Portfolio</text>
+    <path d="M1125 74H1186M1172 60L1186 74L1172 88" fill="none" stroke="#94CBF7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
