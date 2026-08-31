@@ -1,28 +1,28 @@
-[![조정빈 · Vehicle SW Verification — 요구사항을 시험으로, 관찰한 현상을 설명 가능한 근거로.](assets/hero.svg)](https://jb-cho55.github.io/portfolio/)
+[![조정빈 · Vehicle SW Verification — 요구사양을 시험으로, 관찰한 현상을 설명 가능한 근거로.](assets/hero.svg)](https://jb-cho55.github.io/portfolio/)
 
 **[PORTFOLIO ↗](https://jb-cho55.github.io/portfolio/)** &nbsp; · &nbsp; [프로젝트 근거 자료](https://jb-cho55.github.io/portfolio/#projects) &nbsp; · &nbsp; [EMAIL](mailto:cho.jeongbin55@gmail.com)
 
-차량 소프트웨어 검증을 준비하는 **조정빈**입니다. 요구사양에서 시험 조건과 판정 기준을 도출하고, CANoe/CAPL 자동화와 Trace 분석으로 결함을 재현하고 원인을 추적합니다.
+차량 소프트웨어 검증을 준비하는 **조정빈**입니다. 요구사양을 테스트 조건과 판정 기준으로 전환하고, CANoe 기반 수동 검증과 CAPL 자동 검증, Trace 분석으로 결함을 재현하고 원인을 추적합니다.
 
 <br>
 
 ## Selected work
 
-[![01 · 차량 ECU Black Box Validation — 7개 고장 시나리오, 24개 테스트케이스. 정적 결함 4건·동적 결함 11건 식별. 실제 CANoe 시험 패널.](assets/project-black-box.svg)](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
+[![01 · CANoe/CAPL 기반 차량 ECU Black Box Testing — 고장 시나리오 7개, CAPL 스크립트 6종, 테스트케이스 24개, Batt Percent 404조합. 정적 결함 4건·동적 결함 11건 식별.](assets/project-black-box.svg)](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
 
-**차량 ECU Black Box Validation · 개인 프로젝트 · 우수상**<br>
-7개 고장 시나리오를 CAPL 기반 24개 테스트케이스로 구성했습니다. 정적 검토에서 결함 4건, 동적 시험에서 결함 11건을 식별하고, Fresh Frame 수신 이후 측정을 시작하도록 타이밍 판정 기준을 맞췄습니다.
+**CANoe/CAPL 기반 차량 ECU Black Box Testing · 개인 프로젝트 · 우수상**<br>
+요구사양을 기준으로 Fault 상태 전이, 선행 조건, 타이밍 등을 검증했습니다. 요구사양 7개 고장 시나리오를 CAPL 스크립트 6종·테스트케이스 24개로 구현하고, Batt Percent 시나리오 404조합을 시험했습니다. 정적 결함 4건과 동적 결함 11건을 식별했으며, Steering Timing은 요구사양 50±10ms 대비 실제 986~993ms에 검출됐습니다. 수동 검증과 CAPL 자동 검증 결과 차이를 CAN Trace로 분석해 최신 Frame 수신 후 타이머가 동작하도록 CAPL 로직을 개선했습니다.
 
 [시험 설계와 실행 근거 ↗](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
 
 <br>
 
-[![02 · AURIX UDS Bootloader — UDS 리프로그래밍과 Flash Backup/Restore. Trace32·DMI로 4바이트 정렬 오류를 추적한 교육 프로젝트의 당시 기록.](assets/project-bootloader.svg)](https://jb-cho55.github.io/portfolio/artifacts/bootloader/)
+[![02 · UDS를 통한 Flash Backup & Restore — AURIX TC234LP에서 구현한 UDS 기반 ECU Reprogramming과 Application Backup/Restore. Trace32로 4바이트 Alignment 위반을 추적한 교육 프로젝트의 당시 기록.](assets/project-bootloader.svg)](https://jb-cho55.github.io/portfolio/artifacts/bootloader/)
 
-**AURIX UDS Bootloader · 개인 교육 프로젝트**<br>
-UDS 리프로그래밍과 Flash Backup/Restore를 구현하고, CAN 응답 중단의 원인을 레지스터와 Trap 정보로 추적했습니다.
+**UDS를 통한 Flash Backup & Restore · 개인 교육 프로젝트**<br>
+AURIX TC234LP 교육 환경에서 UDS 기반 ECU Reprogramming과 Application Backup/Restore를 구현했습니다. Application Erase 중 CAN 응답 중단을 Trace32로 추적해 source buffer의 4바이트 Alignment 위반을 원인으로 특정·수정했습니다.
 
-> 당시 실행 기록과 현재 정적 확인을 구분합니다. 이후 발견한 길이·권한 검사 및 valid pattern 기록 순서의 개선안은 **미적용·미검증** 상태입니다.
+> 당시 실행·재검증 기록과 현재 정적 확인을 구분합니다. 이후 발견한 길이·권한 검사 및 valid pattern 기록 순서의 개선안은 **미적용·미검증** 상태이며, 모든 오류·중단 상황에서 안전한 부팅을 보장하는 구현으로 제시하지 않습니다.
 
 [구현과 디버깅 과정 ↗](https://jb-cho55.github.io/portfolio/artifacts/bootloader/) &nbsp; · &nbsp; [시험 판정·근거·한계](https://jb-cho55.github.io/portfolio/artifacts/bootloader/#test)
 
