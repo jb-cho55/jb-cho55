@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
   <title id="title">02 · UDS를 통한 Flash Backup &amp; Restore</title>
-  <desc id="desc">AURIX TC234LP 개인 교육 프로젝트. UDS 기반 ECU Reprogramming과 Application Backup/Restore를 구현하고 Trace32로 4바이트 Alignment 위반을 분석했습니다. 실제 DMI 캡처를 변경 없이 표시하며, 개발·시험 설명은 당시 기록을 기준으로 합니다.</desc>
+  <desc id="desc">AURIX TC234LP 개인 교육 프로젝트. UDS 기반 ECU Reprogramming과 Application Backup/Restore를 구현하고 Trace32로 홀수 주소의 word 접근을 분석했습니다. 실제 DMI 캡처를 변경 없이 표시하며, 개발·시험 설명은 당시 기록을 기준으로 합니다.</desc>
   <rect x="1" y="1" width="1278" height="478" rx="16" fill="#F3F6FB" stroke="#DCE4EE" stroke-width="2"/>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', sans-serif">
     <text x="50" y="59" fill="#386C9A" font-size="18" font-weight="650" letter-spacing="2">02 / EMBEDDED DEVELOPMENT</text>
     <text x="48" y="134" fill="#10283F" font-size="43" font-weight="700" letter-spacing="-1.3">UDS를 통한 Flash</text>
     <text x="48" y="190" fill="#10283F" font-size="43" font-weight="700" letter-spacing="-1.3">Backup &amp; Restore</text>
     <text x="51" y="247" fill="#4B6077" font-size="22">ECU Reprogramming · Application 복원</text>
-    <text x="51" y="283" fill="#4B6077" font-size="22">Trace32로 4-byte Alignment 위반 추적</text>
+    <text x="51" y="283" fill="#4B6077" font-size="22">Trace32로 비정렬 word 접근 추적</text>
     <path d="M50 324H598" stroke="#D3DEEA"/>
-    <text x="50" y="374" fill="#183A59" font-size="31" font-weight="700">4-byte alignment</text>
+    <text x="50" y="374" fill="#183A59" font-size="31" font-weight="700">Alignment Trap 분석</text>
     <text x="51" y="421" fill="#657A90" font-size="20">교육 프로젝트 · 당시 기록 기준</text>
     <rect x="666" y="57" width="560" height="368" rx="12" fill="#FFFFFF" stroke="#DCE4EE"/>
     <circle cx="692" cy="87" r="4" fill="#7B9BB8"/>

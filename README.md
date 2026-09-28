@@ -1,28 +1,28 @@
-[![조정빈 · Vehicle SW Verification — 요구사양을 시험으로, 관찰한 현상을 설명 가능한 근거로.](assets/hero.svg)](https://jb-cho55.github.io/portfolio/)
+[![조정빈 · Vehicle SW Verification — 요구사항을 시험으로, 관찰한 현상을 설명 가능한 근거로.](assets/hero.svg)](https://jb-cho55.github.io/portfolio/)
 
 **[PORTFOLIO ↗](https://jb-cho55.github.io/portfolio/)** &nbsp; · &nbsp; [프로젝트 근거 자료](https://jb-cho55.github.io/portfolio/#projects) &nbsp; · &nbsp; [EMAIL](mailto:cho.jeongbin55@gmail.com)
 
-차량 소프트웨어 검증을 준비하는 **조정빈**입니다. 요구사양을 테스트 조건과 판정 기준으로 전환하고, CANoe 기반 수동 검증과 CAPL 자동 검증, Trace 분석으로 결함을 재현하고 원인을 추적합니다.
+차량 소프트웨어 검증을 준비하는 **조정빈**입니다. 요구사항을 테스트 조건과 판정 기준으로 전환하고, CANoe 기반 수동 검증과 CAPL 자동 검증, Trace 분석으로 결함을 재현하고 원인을 추적합니다.
 
 <br>
 
 ## Selected work
 
-[![01 · CANoe/CAPL 기반 차량 ECU Black Box Testing — 고장 시나리오 7개, CAPL 스크립트 6종, 테스트케이스 24개, Batt Percent 404조합. 정적 결함 4건·동적 결함 11건 식별.](assets/project-black-box.svg)](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
+[![01 · CANoe/CAPL 기반 차량 ECU Black Box Testing — 고장 시나리오 7개, CAPL 스크립트 6종, 테스트케이스 24개, Batt Percent 404조합. 정적 검토 4건·동적 결함 11건 식별.](assets/project-black-box.svg)](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
 
-**CANoe/CAPL 기반 차량 ECU Black Box Testing · 개인 프로젝트 · 우수상**<br>
-요구사양을 기준으로 Fault 상태 전이, 선행 조건, 타이밍 등을 검증했습니다. 요구사양 7개 고장 시나리오를 CAPL 스크립트 6종·테스트케이스 24개로 구현하고, Batt Percent 시나리오 404조합을 시험했습니다. 정적 결함 4건과 동적 결함 11건을 식별했으며, Steering Timing은 요구사양 50±10ms 대비 실제 986~993ms에 검출됐습니다. 수동 검증과 CAPL 자동 검증 결과 차이를 CAN Trace로 분석해 최신 Frame 수신 후 타이머가 동작하도록 CAPL 로직을 개선했습니다.
+**CANoe/CAPL 기반 차량 ECU Black Box Testing · 개인 교육 프로젝트 · 우수상**<br>
+CANoe 시뮬레이션 기반 교육 과제에서 요구사항을 시험 조건으로 바꾸고 CAPL 자동화를 수행했습니다. 7개 고장 시나리오 중 보관 소스는 6종·testcase 선언 24개이며, Batt Percent 404조합을 다뤘습니다. 정적 검토 4건(표기 개선 2건 포함)과 동적 결함 11건을 정리했습니다. IGN 50 cycle 요구에 대해 49회에서 Clear된 판정 화면과 요구사항–시험–결함 추적표를 공개합니다.
 
 [시험 설계와 실행 근거 ↗](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
 
 <br>
 
-[![02 · UDS를 통한 Flash Backup & Restore — AURIX TC234LP에서 구현한 UDS 기반 ECU Reprogramming과 Application Backup/Restore. Trace32로 4바이트 Alignment 위반을 추적한 교육 프로젝트의 당시 기록.](assets/project-bootloader.svg)](https://jb-cho55.github.io/portfolio/artifacts/bootloader/)
+[![02 · UDS를 통한 Flash Backup & Restore — AURIX TC234LP에서 구현한 UDS 기반 ECU Reprogramming과 Application Backup/Restore. Trace32로 비정렬 word 접근을 추적한 교육 프로젝트의 당시 기록.](assets/project-bootloader.svg)](https://jb-cho55.github.io/portfolio/artifacts/bootloader/)
 
 **UDS를 통한 Flash Backup & Restore · 개인 교육 프로젝트**<br>
-AURIX TC234LP 교육 환경에서 UDS 기반 ECU Reprogramming과 Application Backup/Restore를 구현했습니다. Application Erase 중 CAN 응답 중단을 Trace32로 추적해 source buffer의 4바이트 Alignment 위반을 원인으로 특정·수정했습니다.
+AURIX TC234LP 교육 환경에서 UDS 기반 ECU Reprogramming과 Application Backup/Restore를 구현했습니다. Application Erase 중 CAN 응답 중단을 Trace32로 추적해 홀수 주소의 word 접근과 Alignment Trap을 연결하고, uint32 저장 공간으로 복사 버퍼의 정렬을 확보했습니다.
 
-> 당시 실행·재검증 기록과 현재 정적 확인을 구분합니다. 이후 발견한 길이·권한 검사 및 valid pattern 기록 순서의 개선안은 **미적용·미검증** 상태이며, 모든 오류·중단 상황에서 안전한 부팅을 보장하는 구현으로 제시하지 않습니다.
+> 공개 캡처·소스와 수행 서술을 구분합니다. 이후 발견한 길이·권한 검사 및 valid pattern 기록 순서의 개선안은 **미적용·미검증** 상태이며, 모든 오류·중단 상황에서 안전한 부팅을 보장하는 구현으로 제시하지 않습니다.
 
 [구현과 디버깅 과정 ↗](https://jb-cho55.github.io/portfolio/artifacts/bootloader/) &nbsp; · &nbsp; [시험 판정·근거·한계](https://jb-cho55.github.io/portfolio/artifacts/bootloader/#test)
 
@@ -31,7 +31,7 @@ AURIX TC234LP 교육 환경에서 UDS 기반 ECU Reprogramming과 Application Ba
 [![03 · CarMaker ADAS 통합·주차 — 6인 팀의 팀장·주차 알고리즘 담당. Hybrid A*·Reeds-Shepp 적용. 공개 주차 경로 결과.](assets/project-carmaker.svg)](https://github.com/jb-cho55/IVS-CarMaker-ADAS)
 
 **CarMaker ADAS 통합·주차 · 6인 팀의 팀장 / 주차 알고리즘 담당**<br>
-CarMaker·Simulink 기반 ADAS 통합 프로젝트에서 Hybrid A*·Reeds-Shepp를 적용한 주차 알고리즘을 담당했습니다. 팀 전체 결과와 개인 기여를 구분해 소개합니다.
+CarMaker·Simulink 기반 프로젝트에서 Hybrid A*·Staging·Reeds-Shepp 주차 경로계획과 팀 역할 조율을 담당했습니다. 공개 문서의 최대 오차 0.16m, T05의 51.6m→0.02m 개선은 해당 시험 조건의 팀·주차 파트 결과입니다. 팀 PR 이력 22건과 개인 기여를 구분합니다.
 
 [코드와 프로젝트 문서 ↗](https://github.com/jb-cho55/IVS-CarMaker-ADAS)
 
@@ -48,7 +48,7 @@ Embedded C · AURIX TC234LP · CAN / ISO-TP / UDS · Trace32 · MCAL 기반 Flas
 **교육·실습**<br>
 AUTOSAR Classic / MCAL · A-SPICE · ISO 26262 · MISRA C · Polyspace
 
-[프로젝트별 기술 경험 수준 ↗](https://jb-cho55.github.io/portfolio/#skills)
+[프로젝트별 기술 적용 경험 ↗](https://jb-cho55.github.io/portfolio/#skills)
 
 <br>
 
