@@ -1,4 +1,4 @@
-[![조정빈 · Vehicle SW Verification — 요구사항을 시험으로, 관찰한 현상을 설명 가능한 근거로.](assets/hero.svg)](https://jb-cho55.github.io/portfolio/)
+[![조정빈 · Vehicle SW — 요구사항을 시험으로, 관찰한 현상을 설명 가능한 근거로.](assets/hero.svg)](https://jb-cho55.github.io/portfolio/)
 
 **[PORTFOLIO ↗](https://jb-cho55.github.io/portfolio/)** &nbsp; · &nbsp; [프로젝트 근거 자료](https://jb-cho55.github.io/portfolio/#projects) &nbsp; · &nbsp; [EMAIL](mailto:cho.jeongbin55@gmail.com)
 
@@ -8,10 +8,10 @@
 
 ## Selected work
 
-[![01 · CANoe/CAPL 기반 차량 ECU Black Box Testing — 고장 시나리오 7개, CAPL 스크립트 6종, 테스트케이스 24개, Batt Percent 404조합. 정적 검토 4건·동적 결함 11건 식별.](assets/project-black-box.svg)](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
+[![01 · CANoe/CAPL 기반 차량 ECU Black Box Testing — 고장 시나리오 7개, Testcase 24개, 요구사양 결함 4건, 동적 결함 11건.](assets/project-black-box.svg)](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
 
 **CANoe/CAPL 기반 차량 ECU Black Box Testing · 개인 교육 프로젝트 · 우수상**<br>
-CANoe 시뮬레이션 기반 교육 과제에서 요구사항을 시험 조건으로 바꾸고 CAPL 자동화를 수행했습니다. 7개 고장 시나리오 중 보관 소스는 6종·testcase 선언 24개이며, Batt Percent 404조합을 다뤘습니다. 정적 검토 4건(표기 개선 2건 포함)과 동적 결함 11건을 정리했습니다. IGN 50 cycle 요구에 대해 49회에서 Clear된 판정 화면과 요구사항–시험–결함 추적표를 공개합니다.
+CANoe 기반 테스트 환경을 구축하고 교육 과제의 요구사항을 시험 조건으로 바꾸어 CAPL 자동화를 수행했습니다. 7개 고장 시나리오에 대해 Testcase 24개를 작성했고, 요구사양 결함 4건과 동적 결함 11건을 정리했습니다. IGN 50 cycle 요구에 대해 49회에서 Clear된 판정과 요구사양–시험–결함 추적표를 공개합니다.
 
 [시험 설계와 실행 근거 ↗](https://jb-cho55.github.io/portfolio/artifacts/black-box/)
 

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="450" viewBox="0 0 1280 450" role="img" aria-labelledby="title desc">
-  <title id="title">조정빈 · Vehicle SW Verification</title>
+  <title id="title">조정빈 · Vehicle SW</title>
   <desc id="desc">요구사항을 시험으로, 관찰한 현상을 설명 가능한 근거로. CANoe, CAPL, Embedded C, Trace32.</desc>
   <defs>
     <linearGradient id="navy" x2="1" y2="1"><stop stop-color="#0B1728"/><stop offset="1" stop-color="#122D4B"/></linearGradient>
@@ -11,7 +11,7 @@
     <text x="110" y="65" fill="#A6C9E7" font-size="17" font-weight="600" letter-spacing="2.6">VEHICLE SOFTWARE PORTFOLIO</text>
     <text x="64" y="167" fill="#FFFFFF" font-size="76" font-weight="750" letter-spacing="-3">조정빈</text>
     <text x="310" y="160" fill="#A1B5CA" font-size="22" letter-spacing="2">JEONGBIN CHO</text>
-    <text x="64" y="225" fill="#91C7F4" font-size="39" font-weight="600" letter-spacing="-.6">Vehicle SW Verification</text>
+    <text x="64" y="225" fill="#91C7F4" font-size="39" font-weight="600" letter-spacing="-.6">Vehicle SW Engineer</text>
     <text x="66" y="286" fill="#D9E4EF" font-size="25">요구사항을 시험으로,</text>
     <text x="66" y="324" fill="#D9E4EF" font-size="25">관찰한 현상을 설명 가능한 근거로.</text>
     <path d="M64 362H740" stroke="#FFFFFF" stroke-opacity=".14"/>
